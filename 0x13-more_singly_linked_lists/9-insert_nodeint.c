@@ -32,21 +32,20 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 
 	if (idx == 0) /*if the index for new node is 0*/
-	{
-		/*first node will be moved to second node*/
+	{		/*first node will be moved to second node*/
 		new_node->next = *head;
 		/*new node will be placed as the first node*/
 		*head = new_node;
 	}
 	else if (current->next) /*if index where to add our new node is not 0*/
 	{
-		new_node->next = current->next; /*place current node after new node*/
+		new_node->next = current->next; /*current node after new node*/
 		current->next = new_node;/*set the new node at index idx*/
 	}
 	else /*if node position is not present in the list*/
 	{
-		new_node->next = NULL;/*set next addr as NULL, indicates last node*/
-		current->next = new_node;/*set the new node at the last position in list*/
+		new_node->next = NULL;/*set next to NULL indicates last node*/
+		current->next = new_node;/*set new node to last position*/
 	}
 
 	return (new_node);
