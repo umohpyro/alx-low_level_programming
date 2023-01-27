@@ -1,71 +1,60 @@
 # 0x1E. C - Search Algorithms
-<div class="panel panel-default" id="project-description">
-  <div class="panel-body">
-    <h2>Resources</h2>
+Resources
+---------
 
-<p><strong>Read or watch</strong>:</p>
+**Read or watch**:
 
-<ul>
-<li><a href="/rltoken/ap2kuRv8qrUMyQ0-MY3EXw" title="Search algorithm" target="_blank">Search algorithm</a> </li>
-<li><a href="/rltoken/QK9ENdoTyqGs0d4_M3XE3g" title="Space complexity (1)" target="_blank">Space complexity (1)</a> </li>
-</ul>
+*   [Search algorithm](/rltoken/ap2kuRv8qrUMyQ0-MY3EXw "Search algorithm")
+*   [Space complexity (1)](/rltoken/QK9ENdoTyqGs0d4_M3XE3g "Space complexity (1)")
 
-<h2>Learning Objectives</h2>
+Learning Objectives
+-------------------
 
-<p>At the end of this project, you are expected to be able to <a href="/rltoken/i0Ru9NIvGBHVAlsg7w5vVg" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
+At the end of this project, you are expected to be able to [explain to anyone](/rltoken/i0Ru9NIvGBHVAlsg7w5vVg "explain to anyone"), **without the help of Google**:
 
-<h3>General</h3>
+### General
 
-<ul>
-<li>What is a search algorithm</li>
-<li>What is a linear search</li>
-<li>What is a binary search</li>
-<li>What is the best search algorithm to use depending on your needs</li>
-</ul>
+*   What is a search algorithm
+*   What is a linear search
+*   What is a binary search
+*   What is the best search algorithm to use depending on your needs
 
-<h3>Copyright - Plagiarism</h3>
+### Copyright - Plagiarism
 
-<ul>
-<li>You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.</li>
-<li>You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work. </li>
-<li>You are not allowed to publish any content of this project.</li>
-<li>Any form of plagiarism is strictly forbidden and will result in removal from the program.</li>
-</ul>
+*   You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
+*   You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
+*   You are not allowed to publish any content of this project.
+*   Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
-<h2>Requirements</h2>
+Requirements
+------------
 
-<h3>General</h3>
+### General
 
-<ul>
-<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
-<li>All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89</li>
-<li>All your files should end with a new line</li>
-<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
-<li>Your code should use the <code>Betty</code> style. It will be checked using <a href="https://github.com/holbertonschool/Betty/blob/master/betty-style.pl" title="betty-style.pl" target="_blank">betty-style.pl</a> and <a href="https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl" title="betty-doc.pl" target="_blank">betty-doc.pl</a></li>
-<li>You are not allowed to use global variables</li>
-<li>No more than 5 functions per file</li>
-<li>You are only allowed to use the <code>printf</code> function of the standard library. Any call to another function like <code>strdup</code>, <code>malloc</code>, … is forbidden.</li>
-<li>In the following examples, the <code>main.c</code> files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own <code>main.c</code> files at compilation. Our <code>main.c</code> files might be different from the one shown in the examples</li>
-<li>The prototypes of all your functions should be included in your header file called <code>search_algos.h</code></li>
-<li>Don’t forget to push your header file</li>
-<li>All your header files should be include guarded</li>
-</ul>
+*   Allowed editors: `vi`, `vim`, `emacs`
+*   All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+*   All your files should end with a new line
+*   A `README.md` file, at the root of the folder of the project, is mandatory
+*   Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl "betty-style.pl") and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl "betty-doc.pl")
+*   You are not allowed to use global variables
+*   No more than 5 functions per file
+*   You are only allowed to use the `printf` function of the standard library. Any call to another function like `strdup`, `malloc`, … is forbidden.
+*   In the following examples, the `main.c` files are shown as examples. You can use them to test your functions, but you don’t have to push them to your repo (if you do we won’t take them into account). We will use our own `main.c` files at compilation. Our `main.c` files might be different from the one shown in the examples
+*   The prototypes of all your functions should be included in your header file called `search_algos.h`
+*   Don’t forget to push your header file
+*   All your header files should be include guarded
 
-<h2>More Info</h2>
+More Info
+---------
 
-<p>You will be asked to write files containing big O notations. Please use this format:</p>
+You will be asked to write files containing big O notations. Please use this format:
 
-<ul>
-<li><code>O(1)</code></li>
-<li><code>O(n)</code></li>
-<li><code>O(n!)</code></li>
-<li>n*m -&gt; <code>O(nm)</code></li>
-<li>n square -&gt; <code>O(n^2)</code></li>
-<li>sqrt n -&gt; <code>O(sqrt(n))</code></li>
-<li>log(n) -&gt; <code>O(log(n))</code></li>
-<li>n * log(n) -&gt; <code>O(nlog(n))</code></li>
-<li>…</li>
-</ul>
-
-  </div>
-</div>
+*   `O(1)`
+*   `O(n)`
+*   `O(n!)`
+*   n\*m -> `O(nm)`
+*   n square -> `O(n^2)`
+*   sqrt n -> `O(sqrt(n))`
+*   log(n) -> `O(log(n))`
+*   n \* log(n) -> `O(nlog(n))`
+*   …
